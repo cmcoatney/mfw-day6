@@ -1,185 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Page Title</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <!-- stylesheet placed after bootstrap can extend/override its classes -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Page Title</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+         crossorigin="anonymous"
+         />
+      <!-- stylesheet placed after bootstrap can extend/override its classes -->
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="bg-light text-center">
+      <div class="col-12">
+         <div class="bg-light text-center">
             <hr />
             <br />
             <h1>More Utility Classes</h1>
             <br />
             <hr />
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="bg-light text-center">
+         </div>
+      </div>
+      <div class="col-12">
+         <div class="bg-light text-center">
             <hr />
             <br />
             <h3>Position</h3>
             <p>Position elements at top or bottom of viewport</p>
             <ul class="li">
-              fixed-top
+               fixed-top
             </ul>
             <ul class="li">
-              fixed-bottom
+               fixed-bottom
             </ul>
             <ul class="li">
-              sticky-top
+               sticky-top
             </ul>
             <ul class="li">
-              Responsive classes also
+               Responsive classes also
             </ul>
             <ul class="li">
-              <strong>e.g.:</strong>
-              sticky-lg-top
+               <strong>e.g.:</strong>
+               sticky-lg-top
             </ul>
             <hr />
-          </div>
-          <div class="rounded-bottom fixed-top bg-danger text-white opacity-75">
+         </div>
+         <div class="rounded-bottom fixed-top bg-danger text-white opacity-75">
             Position Top
-          </div>
-
-          <button class="btn btn-primary rounded-bottom sticky-md-top">
-            Position Top
-          </button>
-
-          <div class="bg-light text-center">
+         </div>
+         <button class="btn btn-primary rounded-bottom sticky-md-top">
+         Position Top
+         </button>
+         <div class="bg-light text-center">
             <hr />
             <br />
             <h3>Display</h3>
-            <p>Utilities that effect the display property</p>
+            <p>
+               Utilities that effect the display property across all breakpoints
+            </p>
             <ul class="li">
-              d-none
+               d-none
             </ul>
             <ul class="li">
-              d-inline
+               d-inline
             </ul>
             <ul class="li">
-              d-block
+               d-block
             </ul>
             <ul class="li">
-              d-inline-block
+               d-inline-block
             </ul>
             <ul class="li"></ul>
             <hr />
-          </div>
-
-          <div class="col m-5">
-            <div class="bg-danger text-white p-5 d-none$ m-3">
-              If we add d-none to this element it will disappear
+         </div>
+         <div class="col m-5">
+            <div class="bg-danger text-white p-5 d-lg-none m-3 text-center">
+               Using responsive version of d-none (display none), If we expand to
+               lg breakpoint this element will disappear
             </div>
-          </div>
-
-          <div class="col m-5">
+         </div>
+         <div class="col m-5">
             <div class="d-inline bg-primary text-white py-5 m-0">
-              These block elements
+               These block elements
             </div>
             <div class="d-inline bg-warning text-black py-5 m-0">
-              are positioned as inline
+               are positioned as inline
             </div>
-          </div>
-
-          <div class="col m-5">
+         </div>
+         <div class="col m-5">
             <span class="d-block bg-primary text-white py-5 m-0">
-              These inline elements
+            These inline elements
             </span>
             <span class="d-block bg-warning text-black py-5 m-0">
-              are positioned as block
+            are positioned as block
             </span>
-          </div>
-
-          <div class="bg-light text-center">
+         </div>
+         <div class="bg-light text-center">
             <hr />
             <br />
-            <h3>Display</h3>
-            <p>Utilities that effect the display property</p>
+            <h3>More Display</h3>
+            <p>
+               Utilities that effect the display property across all breakpoints
+            </p>
             <ul class="li">
-              grid
+               grid
             </ul>
             <ul class="li">
-              table
+               table
             </ul>
             <hr />
-          </div>
-
-          <div class="d-table table-primary">
-            <div class="d-table-row table-primary">
-              <div class="d-table-cell table-primary">Display Grid</div>
-              <div class="d-table-cell">Display Grid</div>
-              <div class="d-table-cell">Display Grid</div>
+         </div>
+         <div class="d-grid gap-3 text-center">
+            <p>These buttons are displayed as a grid with gap-3</p>
+            <button class="btn btn-primary" type="button">Submit</button>
+            <button class="btn btn-secondary" type="button">Cancel</button>
+         </div>
+         <div class="col-6 d-table m-5 p-3 mx-auto bg-light">
+            <p>
+               This is a table using text-center to center rows within the column
+               and mx-auto to center table
+            </p>
+            <div class="d-table-row text-center">
+               <span class="bg-primary text-white px-1">Example</span>
+               <span class="bg-primary text-white px-1">Example</span>
+               <span class="bg-primary text-white px-1">Example</span>
+               <span class="bg-primary text-white px-1">Example</span>
             </div>
-          </div>
-
-          <div class="bg-light text-center">
+            <div class="d-table-row text-center">
+               <span class="bg-info px-1">Example</span>
+               <span class="bg-info px-1">Example</span>
+               <span class="bg-info px-1">Example</span>
+               <span class="bg-info px-1">Example</span>
+            </div>
+            <div class="d-table-row text-center">
+               <span class="bg-primary text-white px-1">Example</span>
+               <span class="bg-primary text-white px-1">Example</span>
+               <span class="bg-primary text-white px-1">Example</span>
+               <span class="bg-primary text-white px-1">Example</span>
+            </div>
+         </div>
+         <div class="bg-light text-center">
             <hr />
             <br />
             <h3>Flex</h3>
             <br />
             <hr />
-          </div>
+         </div>
 
-          <div class="bg-light text-center">
+
+
+
+  <div class="d-flex flex-column gap-3 justify-content-center align-items-center bg-light col-12 tall">
+    <p class="lead">Thanks to <span class="text-primary">Bootstrap</span> Flex we have</p>
+    <span class="display-1 ">A <strong>BIG</strong> Concept</span>
+    <button class="btn btn-lg btn-primary">With a Big Button</button>
+    <p>In 5 lines of code</p>
+  </div>
+
+
+
+         <div class="bg-light text-center">
             <hr />
             <br />
             <h3>Screen Readers</h3>
             <br />
             <hr />
-          </div>
+         </div>
+<p class="text-danger">
+  <span class="visually-hidden">Although you cannot see what's hidden in this span </span>
+  ...it is still visible to Screen Readers
+</p>
 
-          <div class="bg-light text-center">
+<div class="col tall">
+<p> there is a visuall hidden element you can tab to and make it visible here \/</p>
+  <a class="visually-hidden-focusable" href="#shadows">Skip to main content</a>
+</div>
+
+
+         <div class="bg-light text-center" id="shadows">
             <hr />
             <br />
             <h3>Shadows</h3>
             <br />
             <hr />
-          </div>
-
-          <div class="bg-light text-center">
+         </div>
+         <br />
+         <div class="row">
+            <div class="col">Turn Off Shadow (shadow-none)</div>
+            <div class="col text-end">
+               <div
+                  class="col-6 card"
+                  style="box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2)"
+                  >
+                  <div class="card-body">
+                     This is a card with the shadow property
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">Small Shadow</div>
+            <div class="col">
+               <div class="float-end">
+                  <div class="col-6 card shadow-sm">
+                     <div class="card-body">
+                        This is a card with the shadow property
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">Regular Shadow</div>
+            <div class="col">
+               <div class="float-end">
+                  <div class="col-6 card shadow">
+                     <div class="card-body">
+                        This is a card with the shadow property
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">Large Shadow</div>
+            <div class="col">
+               <div class="float-end">
+                  <div class="col-6 card shadow-lg">
+                     <div class="card-body">
+                        This is a card with the shadow property
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bg-light text-center">
             <hr />
             <br />
             <h3>Sizing</h3>
             <br />
             <hr />
-          </div>
-
-          <div class="bg-light text-center">
+         </div>
+         <div class="h3 d-flex d-inline-block gap-2 display-5">
+            Using
+            <pre><code>.col</code></pre>
+            classes for sizing
+         </div>
+         <p>Parent element must be a block-level element (display: block;)</p>
+         <h4 class="h5 text-muted mt-3">All breakpoints</h4>
+         <div class="bg-secondary">
+            <div class="bg-light p-2 col-1">Width 1/12</div>
+            <div class="bg-light p-2 col-2">Width 1/6</div>
+            <div class="bg-light p-2 col-3">Width 1/4</div>
+            <div class="bg-light p-2 col-4">Width 1/3</div>
+            <div class="bg-light p-2 col-5">Width 5/12</div>
+            <div class="bg-light p-2 col-6">Width 1/2</div>
+            <div class="bg-light p-2 col-7">Width 7/12</div>
+            <div class="bg-light p-2 col-8">Width 2/3</div>
+            <div class="bg-light p-2 col-9">Width 3/4</div>
+            <div class="bg-light p-2 col-10">Width 5/6</div>
+            <div class="bg-light p-2 col-11">Width 11/12</div>
+            <div class="bg-light p-2 col-12">Width 1/1</div>
+         </div>
+         <h4 class="h5 text-muted mt-3">Responsive</h4>
+         <p>Example: XS: 1/6, SM: 1/3, MD: 1/2, LG: 2/3, XL: 5/6, XXL: 1/1</p>
+         <div class="bg-secondary">
+            <div
+               class="bg-light p-2 col-2 col-sm-4 col-md-6 col-lg-8 col-xl-10 col-xxl-12"
+               >
+               Example
+            </div>
+         </div>
+         <br />
+         <div class="w-25 p-3" style="background-color: #eee">Width 25%</div>
+         <div class="w-50 p-3" style="background-color: #eee">Width 50%</div>
+         <div class="w-75 p-3" style="background-color: #eee">Width 75%</div>
+         <div class="w-100 p-3" style="background-color: #eee">Width 100%</div>
+         <div class="w-auto p-3" style="background-color: #eee">
+            Width auto
+         </div>
+         <br />
+         <p>These images are 10x10 and 1000x1000 pixels with 100% height/width classes relative to viewport </p>
+         <img src="https://place-hold.it/10x10" class="vw-100 short">
+         <img src="https://place-hold.it/1000x1000" class="vh-100 short">
+         <br /><br />
+         <p>100% min height is set relative to 100px parent. Original image is 10x10 px </p>
+         <div style="height: 100px;">
+            <img src="https://place-hold.it/10x10" class="h-100">
+         </div>
+         <br />
+         <div class="bg-light text-center">
             <hr />
             <br />
             <h3>Vertical Alignment</h3>
             <br />
             <hr />
-          </div>
-
-          <div class="bg-light text-center">
+         </div>
+         <p>Applying vertical alignment to images</p>
+         <h1>Baseline<img src="../img/20x20.png" class="align-baseline bg-black"></h1>
+         <h1>Text-top<img src="../img/20x20.png" class="align-text-top bg-black"></h1>
+         <h1>Text-bottom<img src="../img/20x20.png" class="align-text-bottom bg-black"></h1>
+         <h1>Top<img src="../img/20x20.png" class="align-top bg-black"></h1>
+         <h1>Middle<img src="../img/20x20.png" class="align-middle bg-black"></h1>
+         <h1>Bottom<img src="../img/20x20.png" class="align-bottom bg-black"></h1>
+         <p>Applying vertical alignment to tables. Please note</p>
+         <p>Text-top and text-bottom are not applicable on table cells</p>
+         <table class="table" style="height: 200px;">
+            <tbody>
+               <tr>
+                  <td class="align-baseline bg-warning">Baseline</td>
+                  <td class="align-top bg-white">Top</td>
+                  <td class="align-middle bg-primary">Middle</td>
+                  <td class="align-bottom bg-danger">Bottom</td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="bg-light text-center">
             <hr />
             <br />
             <h3>Visibility</h3>
             <br />
             <hr />
-          </div>
-        </div>
+         </div>
+         <span class="h3">Make the yellow block go away</span>
+         <div class="container minion tall">
+            <div class="round bg-warning h-100 w-100"></div>
+         </div>
       </div>
-    </div>
-
-    <section class="footer"></section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <br />
+      <section class="footer"></section>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+         crossorigin="anonymous"
+         ></script>
+   </body>
 </html>

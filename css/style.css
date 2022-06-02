@@ -1,0 +1,12 @@
+.minion {
+  position: absolute;
+  visibility: visible;
+}
+
+.tall {
+  height: 400px;
+}
+
+.short {
+  height: 200px;
+}
